@@ -45,7 +45,8 @@ public class ExcelService {
         int rowNum = 1;
         for(ExcelViewModel excelViewModel : excelViewModels){
             Row row = sheet.createRow(rowNum++);
-            row.createCell(1).setCellValue(excelViewModel.getProductName());
+            row.createCell(1).setCellValue(excelViewModel.getQuantity());
+            row.createCell(2).setCellValue(excelViewModel.getProductCode());
             row.createCell(4).setCellValue(excelViewModel.getUnitPrice());
             row.createCell(5).setCellValue(excelViewModel.getTotalAmount());
             row.createCell(6).setCellValue(excelViewModel.getGtip());

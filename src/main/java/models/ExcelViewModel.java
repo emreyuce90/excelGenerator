@@ -14,6 +14,7 @@ public class ExcelViewModel {
     private String grossWeigth;
     private String netWeigth;
     private String origin;
+    private String productCode;
     private String productName;
     private String quantity;
     private String unitPrice;
